@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pistolo Online Casino is the ultimate destination for casino games and sports betting. Enjoy a top gaming and betting experience by registering now."
+    />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.ico" />
+    <title>Pistolo Online Casino For Incredible Sports Betting & Games</title>
+    <style type="text/css">
+      :root {
+        --body-bg: #040302;
+        --accent-color: rgb(27, 18, 13);
+        --btn-text: #000;
+        --hover-text: #fff;
+      }
+      *,
+      ::after,
+      ::before {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        background: url('images/background-primary.webp') rgb(29, 55, 136) 0 0 / 161px 94px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+          'Helvetica Neue', sans-serif;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      p {
+        margin: 0;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        text-align: center;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .content__inner h1 {
+        font-size: 2.4375em;
+        margin-bottom: 16px;
+      }
+      .content__inner h2 {
+        font-size: 1.9375em;
+        margin: 16px 0;
+      }
+      .content__inner p + p {
+        margin-top: 16px;
+      }
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .header {
+        position: sticky;
+        top: 0;
+        background: url('images/grenades-pattern.webp'),
+          linear-gradient(180deg, rgb(43, 83, 222) 10%, rgb(22, 105, 251) 45.5%, rgb(15, 114, 255) 47.68%, rgb(22, 105, 251));
+        z-index: 10;
+        background-size: 100px 100px, auto;
+        border-bottom: 2px solid rgb(83, 151, 246);
+        min-height: 64px;
+        padding: 8px 0;
+      }
+      .header::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/header-bg.webp');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        inset: 0;
+        z-index: -1;
+      }
+      .header__inner {
+        display: flex;
+        align-items: center;
+        padding: 2px 20px 2px 70px;
+        position: relative;
+      }
+      .menu__burger {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 70px;
+        height: 60px;
+        background-color: var(--menu-bg);
+        z-index: 11;
+      }
+      .menu-burger__input,
+      .menu-burger__label {
+        display: none;
+      }
+      .btn-box--mobile {
+        display: none;
+      }
+      .menu__list {
+        padding: 0 0 0 10px;
+        margin: 0;
+        list-style: none;
+      }
+      .menu,
+      .menu-burger__label span {
+        left: 0;
+      }
+      .menu-burger__label {
+        cursor: pointer;
+      }
+      .menu {
+        position: absolute;
+        top: 66px;
+        padding: 16px 8px;
+        width: 280px;
+        background: linear-gradient(90deg, rgb(37, 74, 199) 23.93%, rgb(31, 62, 178) 86.59%);
+        z-index: 10;
+        transform: translateX(-200%);
+        transition: all 0.5s;
+      }
+      .menu-burger__label span,
+      .menu-burger__label::after,
+      .menu-burger__label::before {
+        height: 6px;
+        border-radius: 4px;
+        background-color: #fff;
+        position: absolute;
+        border: 1px solid #000;
+      }
+      .menu-burger__label span {
+        width: 75%;
+      }
+      .menu-burger__label::before {
+        width: 50%;
+        left: 0;
+      }
+      .menu-burger__label::after {
+        width: 100%;
+      }
+      .menu-burger__label,
+      .menu-burger__label span {
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+      }
+      .menu-burger__input {
+        position: relative;
+        opacity: 0;
+      }
+      .menu-burger__label {
+        position: absolute;
+        left: 20px;
+        top: 28px;
+        width: 30px;
+        height: 23px;
+        z-index: 11;
+      }
+      .menu-burger__label::after,
+      .menu-burger__label::before,
+      .menu-burger__label span {
+        content: '';
+        right: 0;
+        transition: transform 0.3s;
+      }
+      .menu-burger__label::after {
+        top: 0;
+      }
+      .menu-burger__label::before {
+        bottom: 0;
+      }
+      .menu-burger__input:checked ~ .menu-burger__label span,
+      .menu-burger__input:checked ~ .menu-burger__label::before,
+      .menu-burger__input:checked ~ .menu-burger__label::after {
+        width: 100%;
+      }
+      .menu-burger__input:checked + .menu-burger__label + .menu {
+        transform: translateX(0);
+      }
+      .menu__item {
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        transition: all 0.4s;
+        padding: 2px 15px;
+      }
+      .menu__item img {
+        margin-right: 10px;
+      }
+      .menu__item:hover {
+        transform: translateX(5px);
+      }
+      .menu__link {
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .logo {
+        transform: translateY(4px);
+      }
+      .logo__img {
+        z-index: 11;
+      }
+      .header__btn-box {
+        margin-left: auto;
+      }
+      .btn__link {
+        display: inline-block;
+        padding: 9px 22px;
+        font-size: 16px;
+        font-weight: 900;
+        border-radius: 10px;
+        height: 42px;
+        color: #fff;
+        border: none;
+        transition: all 0.5s;
+        text-transform: uppercase;
+        background: radial-gradient(
+            57.41% 52.5% at 50% 100%,
+            rgba(153, 224, 255, 0.35) 0%,
+            rgba(153, 224, 255, 0.35) 31.84%,
+            rgba(153, 224, 255, 0) 100%
+          ),
+          linear-gradient(rgb(83 151 246), rgb(69 140 230) 57.84%, rgb(50 133 234));
+        box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.3) inset, 0 3px 0 0 rgb(3, 73, 164);
+        filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.15));
+      }
+      .btn__link::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        top: 0;
+        left: 0;
+        box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.3) inset, 0 3px 0 0 rgb(3, 73, 164);
+      }
+      .btn__link span {
+        filter: drop-shadow(0 1px 0 rgb(28, 33, 39)) drop-shadow(0 1px 0 rgba(0, 0, 0, 0.15));
+        -webkit-text-stroke: 0.14em rgb(28, 33, 39);
+        paint-order: stroke fill;
+        letter-spacing: 1px;
+      }
+      .button--primary {
+        background-image: linear-gradient(178deg, rgba(93, 255, 89, 0.2) 6.87%, rgba(93, 255, 89, 0) 120.68%),
+          radial-gradient(
+            171.59% 82.06% at 51.32% 18.75%,
+            rgb(82, 241, 64) 0.44%,
+            rgb(102, 248, 87) 44.3%,
+            rgb(65, 227, 49) 46.51%,
+            rgb(58, 202, 9) 100%
+          );
+      }
+      .button--primary::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 3px 0 0 rgba(172, 255, 130, 0.7) inset, 0 3px 0 0 rgb(20, 122, 2);
+      }
+      .main {
+        padding: 105px 0 72px;
+        background-image: url('images/main-img.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        min-height: 480px;
+        margin-bottom: 8px;
+      }
+      .main__wrapp {
+        padding: 0 10px;
+        max-width: 422px;
+        text-align: center;
+        margin-left: 62px;
+        border-radius: 16px;
+        background-image: linear-gradient(rgba(37, 74, 199, 0), rgba(37, 74, 199, 0.8) 60%, rgb(37, 74, 199)),
+          url('images/grenades-pattern.webp'),
+          linear-gradient(rgb(83, 151, 246) 3.13%, rgb(22, 105, 251) 68.52%, rgb(52, 105, 222));
+        background-size: 100% 32%, 115px 115px, auto;
+        background-position: bottom, center, center;
+        background-repeat: no-repeat, repeat, repeat;
+        border: 1px solid rgb(10, 27, 48);
+        position: relative;
+        min-height: 130px;
+      }
+      .main__text {
+        padding: 5px;
+        min-height: 30px;
+        min-width: 230px;
+        font-size: 16px;
+        margin-top: -15px;
+        margin-bottom: 15px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.4;
+        -webkit-text-stroke: 0.14em rgb(28, 33, 39);
+        paint-order: stroke fill;
+        background-image: url('images/title-bg-orange.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      .main__text-title {
+        color: rgb(255, 221, 61);
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.2;
+        -webkit-text-stroke: 0.14em rgb(28, 33, 39);
+        paint-order: stroke fill;
+        margin-bottom: 20px;
+      }
+      .main__btn {
+        padding: 14px 30px;
+        transition: all 0.5s;
+        color: white;
+        text-transform: uppercase;
+        font-size: 26px;
+        margin-bottom: -38px;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 8px;
+        height: 68px;
+      }
+      .main__btn:hover {
+        transform: translateX(-50%) scale(1.1);
+      }
+      .popular {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 37px;
+        margin-bottom: 20px;
+      }
+      .popular__item {
+        cursor: pointer;
+      }
+      .popular__img {
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .popular__img img {
+        transition: all 0.5s;
+        height: auto;
+      }
+      .popular__img:hover img {
+        transform: scale(1.1);
+      }
+      .popular__item span {
+        display: block;
+        overflow: hidden;
+        white-space: nowrape;
+        text-overflow: ellipsis;
+      }
+      .content__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .more-games {
+        color: rgb(133, 196, 255);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        border-radius: 22px;
+        padding: 11px 20px;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+      .footer {
+        padding: 20px 0;
+        background: rgb(31, 62, 178);
+        margin-top: 23px;
+      }
+      .footer__nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-top: 1px solid rgba(88, 92, 131, 0.3);
+        border-bottom: 1px solid rgba(88, 92, 131, 0.3);
+        padding: 15px 0;
+      }
+      .footer__nav-logo {
+        width: 150px;
+        padding-right: 0;
+      }
+      .footer__list-title {
+        font-weight: 700;
+        font-size: 16px;
+        color: #fbf1e8;
+      }
+      .footer__list {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        max-width: 100%;
+        width: 100%;
+      }
+      .footer__list-item {
+        color: #eee0d3;
+      }
+      .footer__text {
+        text-align: center;
+      }
+      .footer__text img {
+        margin: 20px 0 14px;
+      }
+      @media (max-width: 768px) {
+        .popular {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (max-width: 465px) {
+        .content {
+          padding-bottom: 0;
+        }
+        .content__inner h1 {
+          font-size: 30px;
+          margin-bottom: 20px;
+          padding-top: 20px;
+        }
+        .content__inner h2 {
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        .header {
+          padding: 0;
+        }
+        .header__inner {
+          padding: 5px 7px 5px 50px;
+        }
+        .menu-burger__label {
+          left: 10px;
+          top: 30px;
+        }
+        .menu {
+          width: 100%;
+          top: 65px;
+        }
+        .btn__link {
+          padding: 10px 18px 10px 18px;
+          font-size: 12px;
+          height: 38px;
+        }
+        .main {
+          padding: 285px 8px 30px;
+          background-image: url('images/mobile-bg.webp');
+        }
+        .main__wrapp {
+          margin-left: 0;
+          border: none;
+          background-image: none;
+          height: 100px;
+        }
+        .main__text {
+          font-size: 14px;
+        }
+        .main__text-title {
+          font-size: 24px;
+        }
+        .main__btn {
+          font-size: 16px;
+          height: 55px;
+          width: 155px;
+          padding-top: 14px;
+        }
+        .popular {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 370px) {
+        .header__btn-box {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <input class="menu-burger__input" type="checkbox" id="burger" />
+        <label class="menu-burger__label" for="burger"><span></span></label>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <img src="images/promotions.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">Promotions</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/home.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">Home</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/games.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">Casino</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/live-casino.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">live casino</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/jackpots.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">Jackpots</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/sports.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">Sports</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/live-betting.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">Live Betting</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/sports.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">Virtual sports</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/tournaments.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">Tournaments</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/bonus-crab.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">Bonus Crab</a>
+            </li>
+            <li class="menu__item">
+              <img src="images/vip-levels.webp" loading="lazy" alt="icon" width="32" height="32" />
+              <a class="menu__link" href="go">VIP Levels</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="logo" href="https://fatpirate.uk">
+          <img class="logo__img" src="images/logo-mobile.webp" alt="logo" width="105" height="47" />
+        </a>
+        <div class="btn-box header__btn-box">
+          <a class="btn__link button--secondary log-in" href="go"><span>Log in</span></a>
+          <a class="btn__link button--primary registration" href="go"><span>Sign up</span></a>
+        </div>
+      </div>
+    </header>
+    <section class="content">
+      <div class="main">
+        <div class="main__wrapp">
+          <p class="main__text">Casino Welcome Bonus</p>
+          <p class="main__text-title">100% up to €500 +200FS</p>
+          <a class="main__btn btn__link button--primary" href="go"><span>Join Now</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="content__inner">
+          <h1>Nine Casino official website in the UK 🇬🇧</h1>
+          <p>
+            Nine Casino is a modern, dynamically developing online casino that is very popular among players. Nine Casino has a
+            huge selection of games for every taste: excellent new and popular slot machines, a set of games with jackpots, table
+            games, live casino and much more.
+          </p>
+          <p>
+            Games from leading developers with good features provide players with a return percentage above 95%. This is very
+            popular with the players and allows them to spend time with pleasure. A generous welcome bonus, daily free spins,
+            monthly promotions were positively evaluated by many users.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="content__inner">
+          <div class="content__header">
+            <h2>Top</h2>
+            <a class="more-games" href="go">See all</a>
+          </div>
+          <div class="popular">
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/jokercashpotexcl.avif" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>Joker Cashpot</span>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/sweetbonanza.webp" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>Sweet Bonanza 1000</span>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/bookoframagic.webp" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>Book of Ra Deluxe 6</span>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/hotwildsboostfelixgaming.webp" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>20 Hot Wilds Boost</span>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/mightywildjaguar.webp" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>Mighty Wild: Jaguar</span>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/goldblitzextreme.avif" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>Gold Blitz Extreme</span>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/coinvolcanoes.webp" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>3 Coin Volcanoes</span>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/buyfeatureribbon.avif" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>Lucky Dwarfs</span>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/gatesofolympus.avif" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>Gates of Olympus</span>
+              </a>
+            </div>
+            <div class="popular__item">
+              <a class="popular__link" href="go">
+                <div class="popular__img">
+                  <img src="images/hyperstrike.avif" width="100%" height="100%" loading="lazy" alt="image game" />
+                </div>
+                <span>Hyper Strike</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="content">
+      <div class="container">
+        <div class="content__inner">
+          <h2>Is Nine Casino safe and reliable?</h2>
+          <p>
+            Security, confidentiality, honesty of the game and guarantees of the payout of winnings are very important for every
+            online casino player. NineCasino pays great attention to the protection of personal and financial data of its
+            customers. To do this, the casino uses the most modern technologies and encryption protocols. All player information
+            is transmitted in encrypted form and is not stored on the server.
+          </p>
+          <p>
+            The casino uses only certified software from the world's best developers, which ensures 100% randomness of winning.
+            This ensures that the game is fair and everyone has an equal chance of winning. Nine Casino is regularly checked for
+            compliance with all standards and is an honest and reliable online casino with a good reputation.
+          </p>
+          <h2>Licenses and regulation of Nine Casino</h2>
+          <p>
+            Nine Casino is managed by the Cyprus company Scartesu Limited, which is a subsidiary of Dux Group NV located in Malta.
+            This company has extensive experience and a good reputation in the field of gambling. NineCasino has license no.
+            B2C-AK2QPM3H- 668JAZ, which is issued by Curacao eGaming (Netherlands). This ensures that the casino complies with all
+            international rules and standards in the field of gaming. Each player can be sure of his safety, transparency of the
+            game and the honesty of winning.
+          </p>
+          <h2>Website and mobile App</h2>
+          <p>
+            The Nine Casino website is well designed, has a concise design and a simple intuitive interface. The site is not
+            overloaded with distracting ads, it has a convenient search by categories and providers. All sections and blocks are
+            located on the main page, so even a beginner can easily navigate. At the bottom of the page, all possible payment and
+            withdrawal methods are immediately visible.
+          </p>
+          <p>
+            The site is optimized for various mobile devices and desktop computers, quickly adapts to the size of any gadget. The
+            mobile version of the site is full-fledged, supports all the functions of the main site and loads quickly. It is
+            convenient and allows you to play anywhere without restrictions.
+          </p>
+          <h2>Registration and login to Nine Casino</h2>
+          <p>
+            Registering with Nine Casino is very simple and can be done in a few minutes. To do this, click the “Register” button,
+            which is located in the upper right corner and fill in several fields: email address, select a country, come up with a
+            password, agree to the terms and conditions of the casino by checking the box. Then click the “Register" button.
+          </p>
+          <p>
+            After registration, the player gets access to his account, where it is necessary to specify the name, surname,
+            address, phone number and email. After creating an account, you can immediately start playing. Identification of the
+            person will be carried out at the first withdrawal of money. The casino will request a photo ID and confirmation of
+            the right to the account to which the money will be withdrawn in order to avoid fraud.
+          </p>
+          <h2>Deposit and withdrawal methods</h2>
+          <p>
+            After registration, the player can top up his account. NineCasino offers many popular payment systems for depositing
+            and withdrawing funds, which allows users to easily manage their account. Ways to deposit and withdraw money:
+          </p>
+          <ul>
+            <li>Online banking;</li>
+            <li>Bank cards: Visa, MasterCard;</li>
+            <li>Payment systems: Neteller, Jeton, Mifinity, eZeeWallet, AstroPay, Skrill;</li>
+            <li>Cryptocurrencies: from Bitcoin, Litecoin, Ethereum and others.</li>
+          </ul>
+          <p>
+            We pay special attention that the player can use only those payment methods that are registered in his name, since
+            when withdrawing money, the casino will ask the client to confirm this.
+          </p>
+          <p>
+            The money is received instantly and the deposit fee is not charged. The site has a unique withdrawal system that
+            allows you to receive winnings within one day, with the exception of a bank transfer, where processing the request
+            takes 5-7 days.
+          </p>
+          <h2>Nine Casino Games</h2>
+          <p>
+            Before playing for money, Nine Casino offers to play many games for free. This is a great opportunity to get
+            acquainted with various games, choose the most interesting ones, develop your tactics and strategy, have fun without
+            risking money. This is a good opportunity for new players to get acquainted with the online casino and the collection
+            of games.
+          </p>
+          <p>For players who want to play for real money, NineCasino offers a wide variety of games:</p>
+          <ul>
+            <li>
+              <b>Slots.</b>
+              Here are modern gaming machines from the world's best manufacturers. Many slot machines have a feature that allows
+              the player to try their luck in bonus rounds and risk rounds. A separate section offers games with a jackpot and an
+              increased jackpot.
+            </li>
+            <li>
+              <b>Table games.</b>
+              It contains all the most popular card games, such as blackjack, baccarat, various types of poker, roulette and
+              popular lotteries.
+            </li>
+            <li>
+              <b>Live casino.</b>
+              Here you can feel the atmosphere of a land-based casino, the games take place in real time with a live dealer. You
+              can play in a live casino only after registering and making your first deposit.
+            </li>
+          </ul>
+          <h2>Promotions and bonuses</h2>
+          <p>
+            Nine Casino offers its customers a generous welcome bonus consisting of 3 parts, free spins, lots of promotions and
+            lotteries, daily cashback. Both new players and regular customers can participate in all promotions and tournaments.
+            All this brings additional sensations and chances of winning to the game, improves the gaming experience.
+          </p>
+          <p>
+            All information about bonuses and promotions can be found in the “Promotions” section on the main page of the casino.
+            Before receiving bonuses and participating in promotions, carefully study all the conditions for their provision. If
+            you have any questions, please consult the support service.
+          </p>
+          <h2>Customer Support</h2>
+          <p>
+            Nine Casino support service is available around the clock seven days a week. The service operators react quickly and
+            professionally, friendly and patiently solve all the problems that players have. The following types of communication
+            are available:
+          </p>
+          <ul>
+            <li>Online chat is the fastest type of communication;</li>
+            <li>E-Mail.</li>
+          </ul>
+          <p>You can also find answers to many frequently asked questions on the site.</p>
+          <h2>Advantages and disadvantages of Nine Casino</h2>
+          <p>
+            Nine Casino is a fun new generation online casino, with a wide selection of all kinds of slots from the most famous
+            manufacturers, with a variety of table games and live dealer games.
+          </p>
+          <p>
+            The casino website is very convenient, without distracting ads, has simple navigation, which allows the client to
+            quickly find the right game. The site is fully optimized for any gadgets and desktop computers, which allows you to
+            play from any available device.
+          </p>
+          <p>
+            A generous welcome bonus, really profitable promotions and offers, quick withdrawal of money within 24 hours,
+            responsive support service are very attractive for many players.
+          </p>
+          <p>
+            One of the disadvantages is the restriction for some countries and the insufficient number of types of communication
+            with the support service.
+          </p>
+          <p>
+            In general, NineCasino is a reliable and high-tech online gaming platform that gives you the opportunity to enjoy the
+            game, get a new gaming experience and have a good time. User reviews coincide with our opinion about the safety and
+            integrity of the casino.
+          </p>
+          <h2>Responsible game</h2>
+          <p>
+            Nine Casino takes the issue of responsible gaming very seriously and provides its customers with various tools to
+            prevent the development of unhealthy gaming habits. There is an opportunity to take a test for addiction to gambling.
+            The casino offers its clients to set personal limits that will limit the budget and time that the user spends on the
+            game. There is an option of self-exclusion for up to a year, a useful resource for organizations that help in the
+            fight against gambling addiction.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <nav class="footer__nav">
+            <div class="footer__nav-item">
+              <p class="footer__list-title">General Info</p>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="#">About Us</a></li>
+                <li class="footer__list-item"><a href="#">Help Centre</a></li>
+                <li class="footer__list-item"><a href="#">Create Shortcut</a></li>
+                <li class="footer__list-item"><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-item">
+              <p class="footer__list-title">Security and Privacy</p>
+              <ul class="footer__list">
+                <li class="footer__list-item"><a href="#">Privacy Policy</a></li>
+                <li class="footer__list-item"><a href="#">Responsible Gaming</a></li>
+                <li class="footer__list-item"><a href="#">Cookies Policy</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="footer__text">
+            <img src="images/18+.svg" alt="18+" width="40" height="40" />
+            <p>Gambling can be addictive. Play responsibly. FatPirate only accepts customers over 18 years of age.</p>
+            <p>2025 © Pistolo.com All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
